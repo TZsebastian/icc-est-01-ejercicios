@@ -93,7 +93,11 @@ public class DataStructuresPrep {
      *         Ejemplo: getFactorial(5) retorna 120.
      */
     public int getFactorial(int number) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int factorial = 1;
+        for (int i = 1; i <= number; i++) {
+            factorial *= i;     
+        }
+        return factorial;
     }
 
     /**
@@ -104,7 +108,13 @@ public class DataStructuresPrep {
      *         Ejemplo: findMaximum(new int[]{1, 5, 3, 6, 8, 2}) retorna 8.
      */
     public int findMaximum(int[] numbers) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int maximo = numbers[0];
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] > maximo) {
+                maximo = numbers[i];
+            }
+        }
+        return maximo;
     }
 
     /**
@@ -116,9 +126,12 @@ public class DataStructuresPrep {
      *         Ejemplo: powerAlgorithm(2, 3) retorna 8.
      */
     public int powerAlgorithm(int base, int exponent) {
-        throw new UnsupportedOperationException("Not yet implemented");
+        int resultadop = 1;
+        for (int i = 0; i < exponent; i++) {
+            resultadop *= base;
+        }
+        return resultadop; 
     }
-
     /**
      * Verifica si un número es primo.
      * 

@@ -31,7 +31,10 @@ public class App {
         int multiplicacion = dataStructuresPrep.multiplyAlgorithm(5,3);
         int division = dataStructuresPrep.divideWAlgorithm(15,3);
         boolean suma = dataStructuresPrep.isPerfectNumber(28);
-        /*
+        int factorial = dataStructuresPrep.getFactorial(5);
+        int maximo = dataStructuresPrep.findMaximum(new int[]{1,2,3,4,5,6,7,11});
+        int resultadop = dataStructuresPrep.powerAlgorithm(5,3);
+        /*findMaximum
          * Imprimir el resultado de la operación.
          * 
          * Finalmente, imprimimos el resultado de la operación a la consola. Esto nos
@@ -49,5 +52,8 @@ public class App {
         System.out.println("El resultaod de la multiplicacion es: " + multiplicacion);
         System.out.println("El resultado de la division es: " + division);
         System.out.println(suma);
+        System.out.println("El resultado del factorial es: " + factorial);
+        System.out.println("El numero maximo del arreglo es: " + maximo);
+        System.out.println("El resultado es: " + resultadop);
     }
 }
